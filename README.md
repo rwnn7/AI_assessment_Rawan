@@ -55,8 +55,11 @@ Full analysis is available in the report.
 ## How to Run
 
 Install dependencies:
+
 pip install -r requirements.txt
+
 Then open and run:
+
 notebook.ipynb
 
 The notebook includes:
