@@ -1,13 +1,14 @@
-Robust Object Detection with YOLOv8 (ROAD4)
+# Robust Object Detection with YOLOv8 (ROAD4)
 
 This project trains a baseline YOLOv8 object detection model and improves robustness under adverse visual conditions using synthetic data augmentation and fine-tuning.
 
-The dataset is derived from a small subset of COCO128, keeping only four classes: person, car, truck, and traffic light. The goal is to evaluate model performance on clean images versus adverse conditions.
+The dataset is derived from a subset of COCO128 and includes four classes: person, car, truck, and traffic light. The objective is to compare model performance on clean images versus images affected by adverse visual conditions.
 
-The repository contains three files. The notebook **robust_yolov8_road4.ipynb** includes the full pipeline for dataset preparation, training, evaluation, and robustness analysis. The file **requirements.txt** lists the Python dependencies needed to run the project. The **README.md** provides a brief project description and instructions.
+The repository contains three files: **robust_yolov8_road4.ipynb**, which includes the full pipeline for dataset preparation, training, and evaluation; **requirements.txt**, which lists the required Python dependencies; and **README.md**, which provides project instructions.
 
-To run the project, first install the dependencies using: `pip install -r requirements.txt`. Then open the notebook **robust_yolov8_road4.ipynb** and run all cells.
+To run the project, install the dependencies using `pip install -r requirements.txt`, then open **robust_yolov8_road4.ipynb** and run all cells.
 
-The notebook automatically loads COCO128, creates the ROAD4 clean dataset, generates an adverse test set using image degradations (brightness/contrast changes, gamma shifts, noise, motion blur, and JPEG compression), trains a baseline model, fine-tunes a robust model using augmented data, and evaluates both models on clean and adverse test sets using Precision, Recall, mAP50, and mAP50–95.
+The notebook automatically prepares the dataset, generates an adverse test set using image degradations (e.g., brightness/contrast changes, noise, blur, and compression), trains a baseline model, fine-tunes a robust model with augmented data, and evaluates both models on clean and adverse test sets using Precision, Recall, mAP50, and mAP50-95.
 
-For reproducibility, a fixed random seed and deterministic settings are used where possible. The dataset and training outputs are not stored in the repository and are automatically generated when running the notebook.
+A fixed random seed and deterministic settings are used where possible to support reproducibility. The dataset and training outputs are generated automatically when the notebook is executed.
+
