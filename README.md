@@ -4,7 +4,7 @@ This project trains a baseline YOLOv8 object detection model and improves robust
 
 The dataset is derived from a subset of COCO128 and includes four classes: person, car, truck, and traffic light. The objective is to compare model performance on clean images versus images affected by adverse visual conditions.
 
-The repository contains four files: AI_assessment_Rawan.ipynb, which includes the full pipeline for dataset preparation, training, and evaluation ,requirements.txt, which lists the required Python dependencies, README.md, which provides project instructions, and AI_assessment_Rawan_Report.pdf, which summarizes the methodology, experimental results, and analysis of the robustness improvements.
+The repository contains four files: *AI_assessment_Rawan.ipynb*, which includes the full pipeline for dataset preparation, training, and evaluation ,r*equirements.txt*, which lists the required Python dependencies, *README.md*, which provides project instructions, and *AI_assessment_Rawan_Report.pdf*, which summarizes the methodology, experimental results, and analysis of the robustness improvements.
 
 To run the project, install the dependencies using `pip install -r requirements.txt`, then open **robust_yolov8_road4.ipynb** and run all cells.
 
