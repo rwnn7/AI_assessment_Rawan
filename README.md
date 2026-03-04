@@ -1,4 +1,4 @@
-# Robust Object Detection with YOLOv8 (ROAD4)
+# Improving YOLOv8 Object Detection Robustness Under Adverse Visual Conditions
 
 This project trains a baseline YOLOv8 object detection model and improves robustness under adverse visual conditions using synthetic data augmentation and fine-tuning.
 
